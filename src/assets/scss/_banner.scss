@@ -8,8 +8,7 @@
 
 .banner {
   min-height:    1090px;
-  margin-bottom: 4.6875rem;
-  padding-top:   112px;
+  display: flex;
   img {
     position: absolute;
     top:      0;
@@ -27,8 +26,15 @@
   //  background: $primaryColor;
   //  z-index: -1;
   //}
+  &-inner {
+    display: flex;
+    height: 100%;
+  }
   &-description {
-
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
   }
 }
 
