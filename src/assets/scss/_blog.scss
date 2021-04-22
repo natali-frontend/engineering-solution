@@ -1,0 +1,51 @@
+@import "./variables";
+
+@media (any-hover: hover) {
+  .blog {
+
+  }
+}
+
+.blog-page {
+  .banner {
+    margin-bottom: 8.12500rem;
+  }
+  .blog {
+    margin-bottom: 10.62500rem;
+    .blog-item {
+      margin-bottom: 3.75rem;
+      .item-image {
+        margin-bottom: 15px;
+      }
+      .item-description {
+        h4 {
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .more {
+      display:         flex;
+      justify-content: flex-end;
+      align-items:     baseline;
+      font-size:       1.5rem;
+      font-weight:     600;
+      color:           $primaryColor;
+      img {
+        margin-left: 10px;
+        width:       2.1875rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .blog {
+
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .blog {
+
+  }
+}
