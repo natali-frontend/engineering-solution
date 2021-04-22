@@ -60,6 +60,12 @@
     &-about {
       display:        flex;
       flex-direction: column;
+      a {
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
     &-contact {
       .footer-socials {
