@@ -11,7 +11,12 @@
   color:      $white;
   p, a {
     color:         #D3D3D4;
+  }
+  p {
     margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   h4 {
     color:         #D6D8DD;
