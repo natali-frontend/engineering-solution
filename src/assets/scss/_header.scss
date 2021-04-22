@@ -1,6 +1,5 @@
 @import "./variables";
 
-
 @media (any-hover: hover) {
   .header {
 
@@ -9,8 +8,54 @@
 
 
 .header {
-  background: $black;
-  color:      $white;
+  position: fixed;
+  top:      0;
+  left:     0;
+  z-index:  100;
+  width:    100%;
+  color:    $white;
+  padding:  40px 0;
+  .container {
+    max-width: 1805px;
+  }
+  a {
+    color: $white;
+  }
+  &-inner {
+    display:         flex;
+    justify-content: space-between;
+    align-items:     center;
+  }
+  &-menu {
+    .menu-list {
+      .menu-item {
+        font-size: 1.5rem;
+        margin:    0 10px;
+      }
+    }
+  }
+
+  .search {
+    .form-search {
+      border-bottom: 1px solid;
+      display:       flex;
+      width:         12.9375rem;
+      img {
+        width:        19px;
+        height:       19px;
+        margin-right: 10px;
+      }
+    }
+    .form-search input {
+      all:            unset;
+      font-size:      1rem;
+      padding-bottom: 5px;
+      &::placeholder {
+        color:     $white;
+        font-size: 1rem;
+      }
+    }
+  }
 }
 
 
