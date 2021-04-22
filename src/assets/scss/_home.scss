@@ -20,30 +20,7 @@
     }
   }
   .benefits {
-    &-list {
-      display:   flex;
-      flex-wrap: wrap;
-    }
-    &-item {
-      width:         37.9%;
-      display:       flex;
-      align-items:   flex-start;
-      margin-bottom: 55px;
-      &:nth-child(2n) {
-        margin-left: 14.52%;
-      }
-
-      .item-image {
-        margin-right:  25px;
-        padding:       10px;
-        border-radius: 10px;
-        box-shadow:    0 3px 8px 0 rgba(14, 165, 211, 0.5);
-        img {
-          width:  55px;
-          height: 55px;
-        }
-      }
-    }
+    margin-bottom: 6.25rem;
   }
 }
 
