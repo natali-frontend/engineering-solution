@@ -1,0 +1,27 @@
+@import "./variables";
+
+@media (any-hover: hover) {
+  .projects {
+
+  }
+}
+
+.projects {
+  .banner {
+    margin-bottom: 8.12500rem;
+    h1 {
+      margin-bottom: 11.25rem;
+    }
+  }
+  .services {
+    margin-bottom: 8.75rem;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+
+}
+
+@media screen and (max-width: 567px) {
+
+}
