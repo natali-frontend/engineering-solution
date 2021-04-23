@@ -9,6 +9,9 @@
 .banner {
   min-height:    1090px;
   display: flex;
+  h1 {
+    max-width: 800px;
+  }
   img {
     position: absolute;
     top:      0;
