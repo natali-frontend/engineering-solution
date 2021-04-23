@@ -22,6 +22,14 @@
     color:         #D6D8DD;
     margin-bottom: 10px;
   }
+  &.electrical-footer {
+    .footer-top {
+      padding: 8.75rem 0 10.9375rem;
+      .btn {
+        padding: 1.37500rem 3.28rem;
+      }
+    }
+  }
   &-top {
     padding:    5.62500rem 0 10.9375rem;
     text-align: center;

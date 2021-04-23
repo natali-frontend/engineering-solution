@@ -121,6 +121,15 @@ h5 {
   position:  relative;
 }
 
+.swiper-container {
+  .swiper-button-next, .swiper-button-prev {
+    color: #262626;
+    &:after {
+      font-size: 3.3125rem;
+    }
+  }
+}
+
 
 @media screen and (max-width: 991.98px) {
 

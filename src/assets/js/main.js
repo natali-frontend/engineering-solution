@@ -1,3 +1,8 @@
-document.addEventListener('DOMContentLoaded', function () {
-    console.log(1)
+//Swiper
+const swiper = new Swiper('.swiper-container', {
+    spaceBetween: 30,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 });
