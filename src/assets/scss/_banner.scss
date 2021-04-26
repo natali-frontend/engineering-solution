@@ -12,12 +12,18 @@
   h1 {
     max-width: 800px;
   }
-  > img {
-    position: absolute;
-    top:      0;
-    left:     0;
-    height:   100%;
-    //border-radius: 0 0 30% 30%;
+  .overlay {
+    width: 100%;
+    display: flex;
+    background-image: linear-gradient(-45deg, rgba(82, 112, 222, 0), rgba(32, 32, 32, 0.7));
+    img {
+      position: absolute;
+      top:      0;
+      left:     0;
+      height:   100%;
+      z-index: -1;
+      //border-radius: 0 0 30% 30%;
+    }
   }
   //&:after {
   //  content: "";

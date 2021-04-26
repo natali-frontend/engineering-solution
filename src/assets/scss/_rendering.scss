@@ -17,6 +17,9 @@
       font-size:     4.5rem;
       margin-bottom: 6.25rem;
     }
+    .overlay {
+      background-image: linear-gradient(-45deg, rgba(84, 119, 201, 0.14), rgba(56, 72, 112, 0), rgba(37, 41, 53, 0.61), rgba(37, 41, 53, 0.51));
+    }
   }
   &-content {
     background:     #202020;
