@@ -1,0 +1,63 @@
+@import "./variables";
+
+@media (any-hover: hover) {
+  .team {
+
+  }
+}
+
+.team {
+  .banner {
+    min-height:    1075px;
+    margin-bottom: 8.12500rem;
+    h1 {
+      margin-bottom: 6.87500rem;
+      color:         $black;
+    }
+    &-inner {
+      justify-content: space-between;
+      align-items:     center;
+    }
+    &-image {
+      width: 62%;
+    }
+  }
+  .benefits {
+    text-align:    center;
+    margin-bottom: 10.9375rem;
+    h2 {
+      text-align: left;
+    }
+    &-list {
+      text-align:    left;
+      margin-bottom: 4.0625rem;
+    }
+  }
+  &-content {
+    margin-bottom: 9.0625rem;
+    &-description {
+      text-align:    center;
+      margin-bottom: 9.6875rem;
+      p {
+        margin-bottom: 1.25rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &-images {
+      display:         flex;
+      justify-content: space-between;
+      align-items:     center;
+      flex-wrap:       wrap;
+      .team-content-image {
+        border-radius: 20px;
+        box-shadow:    10px 20px 20px 0 rgba(82, 112, 222, 0.21);
+        width:         calc(50% - 3.5rem);
+        img {
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
