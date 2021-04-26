@@ -15,6 +15,22 @@
   width:    100%;
   color:    $white;
   padding:  40px 0;
+  &.header-dark {
+    a {
+      color: $black;
+    }
+    .search {
+      .form-search {
+        border-bottom: 1px solid $black;
+        input {
+          color: $black;
+          &::placeholder {
+            color: $black;
+          }
+        }
+      }
+    }
+  }
   .container {
     max-width: 1805px;
   }
