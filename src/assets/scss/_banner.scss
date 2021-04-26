@@ -7,12 +7,12 @@
 }
 
 .banner {
-  min-height:    1090px;
+  min-height: 1090px;
   display: flex;
   h1 {
     max-width: 800px;
   }
-  img {
+  > img {
     position: absolute;
     top:      0;
     left:     0;
