@@ -9,6 +9,7 @@
 .banner {
   min-height: 1090px;
   display: flex;
+  z-index: -1;
   h1 {
     max-width: 800px;
   }
