@@ -107,6 +107,14 @@ h5 {
   text-transform: uppercase;
   border-radius:  50px;
   padding:        1.37500rem 3.76rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-second {
+  border: 3px solid $primaryColor;
+  color: $primaryColor;
+  background: $white;
 }
 
 .footer {
