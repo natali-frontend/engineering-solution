@@ -147,6 +147,15 @@ h5 {
       font-size: 3.3125rem;
     }
   }
+  &.work-swiper {
+    .swiper-pagination-bullets {
+      .swiper-pagination-bullet {
+        width:  20px;
+        height: 20px;
+        margin: 0 9px;
+      }
+    }
+  }
 }
 
 
