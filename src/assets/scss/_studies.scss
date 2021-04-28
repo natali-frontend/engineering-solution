@@ -143,7 +143,10 @@
     &-images {
       width: 29.75%;
       .warning-image {
-        margin-bottom: 1.5rem;
+        margin-bottom: 2.125rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }
