@@ -98,6 +98,11 @@
     &-description {
       margin-bottom: 9.0625rem;
     }
+    &-slider {
+      .swiper-container {
+        padding: 0 6.4rem;
+      }
+    }
   }
   .sports-lighting {
     margin-bottom: 9.0625rem;
