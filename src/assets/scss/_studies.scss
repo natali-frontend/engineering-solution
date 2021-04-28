@@ -30,20 +30,6 @@
           margin-bottom: 25px;
         }
       }
-      li {
-        position:     relative;
-        padding-left: 1.4rem;
-        &:after {
-          content:    "";
-          position:   absolute;
-          top:        50%;
-          left:       0;
-          transform:  translate(0, 50%);
-          width:      9px;
-          height:     3px;
-          background: $primaryColor;
-        }
-      }
     }
   }
   .study {
