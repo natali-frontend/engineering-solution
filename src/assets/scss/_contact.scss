@@ -93,6 +93,13 @@
           display:       flex;
           margin-bottom: 1.87500rem;
           height:        88px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          &.label-message {
+            width:  initial;
+            height: initial;
+          }
           span {
             position:   absolute;
             top:        0;
@@ -114,8 +121,8 @@
         }
         textarea {
           resize:        none;
-          border:        1px solid #262626;
           margin-bottom: 2.5rem;
+          padding:       15px 10px 12px;
         }
         .form-buttons {
           display:        flex;
