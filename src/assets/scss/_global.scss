@@ -172,6 +172,12 @@ h5 {
       font-size: 3.3125rem;
     }
   }
+  .swiper-button-prev {
+    left: 0;
+  }
+  .swiper-button-next {
+    right: 0;
+  }
   &.work-swiper {
     .swiper-pagination-bullets {
       .swiper-pagination-bullet {
