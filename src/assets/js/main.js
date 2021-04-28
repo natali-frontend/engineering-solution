@@ -9,10 +9,7 @@ const swiper = new Swiper('.electrical-swiper', {
 
 const mySwiper = new Swiper('.commercial-lighting-swiper', {
     slidesPerView: 3,
-    spaceBetween: 30,
-    slidesPerGroup: 3,
-    loop: true,
-    loopFillGroupWithBlank: true,
+    spaceBetween: 46,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
