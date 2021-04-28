@@ -181,6 +181,16 @@ h5 {
       }
     }
   }
+  .swiper-pagination-bullets {
+    .swiper-pagination-bullet {
+      background: none;
+      border:     3px solid $primaryColor;
+      opacity:    1;
+      &.swiper-pagination-bullet-active {
+        background: $primaryColor;
+      }
+    }
+  }
 }
 
 
