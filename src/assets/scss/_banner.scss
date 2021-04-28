@@ -8,8 +8,8 @@
 
 .banner {
   min-height: 1090px;
-  display: flex;
-  z-index: -1;
+  display:    flex;
+  z-index:    -1;
   h1 {
     max-width: 800px;
   }
@@ -17,15 +17,15 @@
     box-shadow: none;
   }
   .overlay {
-    width: 100%;
-    display: flex;
+    width:            100%;
+    display:          flex;
     background-image: linear-gradient(-45deg, rgba(82, 112, 222, 0), rgba(32, 32, 32, 0.7));
     img {
       position: absolute;
       top:      0;
       left:     0;
       height:   100%;
-      z-index: -1;
+      z-index:  -1;
       //border-radius: 0 0 30% 30%;
     }
   }
@@ -41,12 +41,12 @@
   //}
   &-inner {
     display: flex;
-    height: 100%;
+    height:  100%;
   }
   &-description {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    display:         flex;
+    flex-direction:  column;
+    align-items:     flex-start;
     justify-content: center;
   }
 }

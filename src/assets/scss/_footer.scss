@@ -39,9 +39,6 @@
       margin-bottom: 4.6875rem;
       color:         #D3D4D5;
     }
-    .btn {
-      box-shadow: 0 10px 20px 0 rgba(82, 112, 222, 0.37);
-    }
   }
   &-center {
     padding: 2.1875rem 0 2.5rem;
@@ -53,7 +50,8 @@
       .footer-logo {
         display:       flex;
         margin-bottom: 35px;
-        font-size: 5.3125rem;
+        font-size:     5.3125rem;
+        color:         #C2C4C8;
       }
       .footer-email {
         display:     flex;
