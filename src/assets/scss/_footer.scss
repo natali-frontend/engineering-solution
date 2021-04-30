@@ -8,12 +8,9 @@
 
 .footer {
   background: linear-gradient(#262626, #252935);
-  color:      $white;
-  p, a {
-    color: #9A9DA2;
-  }
-  p {
+  a {
     margin-bottom: 10px;
+    color:         #9A9DA2;
     &:last-child {
       margin-bottom: 0;
     }
@@ -82,7 +79,7 @@
         display:     flex;
         align-items: flex-end;
         a {
-          margin-right: 20px;
+          margin: 0 20px 0 0;
           img {
             width: 30px;
           }
