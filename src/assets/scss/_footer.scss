@@ -75,6 +75,8 @@
       }
     }
     &-contact {
+      display:        flex;
+      flex-direction: column;
       .footer-socials {
         display:     flex;
         align-items: flex-end;
