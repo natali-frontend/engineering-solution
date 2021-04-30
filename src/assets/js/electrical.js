@@ -6,7 +6,3 @@ const swiper = new Swiper('.electrical-swiper', {
         prevEl: '.swiper-button-prev',
     },
 });
-
-menuItemServices.addEventListener("click", function () {
-    dropDownList.style.display = 'flex';
-});
