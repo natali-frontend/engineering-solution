@@ -119,6 +119,31 @@ h5 {
   box-shadow: none;
 }
 
+.socials {
+  position:       fixed;
+  top:            19.5rem;
+  right:          5.25rem;
+  display:        flex;
+  flex-direction: column;
+  align-items:    center;
+  max-width:      58px;
+  z-index:        100;
+  a {
+    cursor: pointer;
+  }
+  .socials-linkedin {
+    margin-bottom: 2.5rem;
+    img {
+      width: 43px;
+    }
+  }
+  .socials-email {
+    img {
+      width: 58px;
+    }
+  }
+}
+
 .description-list {
   li {
     position:     relative;
