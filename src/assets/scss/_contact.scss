@@ -58,62 +58,6 @@
           }
         }
       }
-      form {
-        display:         flex;
-        justify-content: space-between;
-        flex-wrap:       wrap;
-        max-width:       909px;
-        label {
-          position:      relative;
-          width:         calc(50% - 10px);
-          display:       flex;
-          margin-bottom: 1.87500rem;
-          height:        88px;
-          &:last-child {
-            margin-bottom: 0;
-          }
-          &.label-message {
-            width:  initial;
-            height: initial;
-          }
-          span {
-            position:   absolute;
-            top:        0;
-            left:       1.75rem;
-            transform:  translate(0, -50%);
-            background: $white;
-            color:      #666;
-            padding:    0 9px;
-            font-size:  1.5rem;
-          }
-        }
-        input, textarea {
-          border:    1px solid #262626;
-          padding:   10px;
-          font-size: 1.5rem;
-        }
-        input {
-          width: 100%;
-        }
-        textarea {
-          resize:        none;
-          margin-bottom: 2.5rem;
-          padding:       15px 10px 12px;
-        }
-        .form-buttons {
-          display:        flex;
-          flex-direction: column;
-          align-items:    flex-start;
-          .btn {
-            padding: 1.375rem 4.57rem;
-          }
-          .btn-second {
-            padding:       .97rem 2.85rem;
-            margin-bottom: 1.875rem;
-          }
-        }
-
-      }
     }
     &-image {
       position: absolute;
