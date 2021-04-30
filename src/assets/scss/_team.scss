@@ -44,9 +44,8 @@
       align-items:     stretch;
       flex-wrap:       wrap;
       .team-content-image {
-        border-radius: 20px;
-        box-shadow:    10px 20px 20px 0 rgba(82, 112, 222, 0.21);
-        width:         calc(50% - 3.5rem);
+        display: flex;
+        width:   calc(50% - 3.5rem);
         img {
           border-radius: 20px;
         }
