@@ -85,6 +85,9 @@
           }
         }
       }
+      .swiper-button-prev, .swiper-button-next {
+        transform: translate(0, 100%);
+      }
     }
     &-item {
       position:      relative;
