@@ -22,6 +22,25 @@
       background-image: linear-gradient(-45deg, rgba(84, 119, 201, 0.14), rgba(56, 72, 112, 0), rgba(37, 41, 53, 0.61), rgba(37, 41, 53, 0.51));
     }
   }
+  &-images {
+    display:         flex;
+    justify-content: center;
+    align-items:     center;
+    .rendering-image {
+      background: rgba(32, 32, 32, 0.71);
+      width:      19.5%;
+      display:    flex;
+      cursor:     pointer;
+      &.active {
+        background: none;
+        width:      61.1%;
+      }
+      img {
+        position: relative;
+        z-index:  -1;
+      }
+    }
+  }
   &-content {
     background:     #202020;
     padding-bottom: 8.4375rem;
@@ -77,21 +96,6 @@
         color: $white;
       }
     }
-    &-images {
-      display:         flex;
-      justify-content: center;
-      align-items:     center;
-      .industrial-lighting-image {
-        background: rgba(32, 32, 32, 0.71);
-        &.active {
-          background: none;
-        }
-        img {
-          position: relative;
-          z-index:  -1;
-        }
-      }
-    }
   }
   .commercial-lighting {
     margin-bottom: 9.0625rem;
@@ -108,21 +112,6 @@
     margin-bottom: 9.0625rem;
     &-description {
       margin-bottom: 9.37500rem;
-    }
-    &-images {
-      display:         flex;
-      justify-content: center;
-      align-items:     center;
-      .sports-lighting-image {
-        background: rgba(32, 32, 32, 0.71);
-        &.active {
-          background: none;
-        }
-        img {
-          position: relative;
-          z-index:  -1;
-        }
-      }
     }
   }
   .photorealistic-renderings {
