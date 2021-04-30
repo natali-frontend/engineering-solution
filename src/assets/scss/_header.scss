@@ -6,7 +6,6 @@
   }
 }
 
-
 .header {
   position: fixed;
   top:      0;
@@ -52,6 +51,19 @@
     .menu-item {
       font-size: 1.5rem;
       margin:    0 10px;
+      &.menu-item-services {
+        display:  inline-block;
+        position: relative;
+      }
+    }
+    .drop-down-list {
+      position:       absolute;
+      left:           0;
+      display:        none;
+      flex-direction: column;
+      li {
+        margin-bottom: 10px;
+      }
     }
   }
   .search {
