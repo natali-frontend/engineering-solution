@@ -7,34 +7,36 @@
 }
 
 .banner {
-  min-height: 1100px;
-  display:    flex;
+  display: flex;
   h1 {
-    max-width: 800px;
+    max-width: 820px;
+  }
+  > img {
+    position:   absolute;
+    top:        0;
+    left:       0;
+    height:     100%;
+    z-index:    1;
+    object-fit: cover;
   }
   .go-to-down {
-    position: absolute;
-    bottom:   70px;
-    left:     50%;
-    z-index:  100;
-    width:    68px;
-    height:   37px;
-    cursor:   pointer;
-  }
-  .btn {
-    box-shadow: none;
+    position:  absolute;
+    bottom:    70px;
+    left:      50%;
+    z-index:   99;
+    width:     68px;
+    height:    37px;
+    cursor:    pointer;
+    transform: translate(-50%, 0);
   }
   .overlay {
+    position:         absolute;
+    top:              0;
+    left:             0;
     width:            100%;
-    display:          flex;
+    height:           100%;
+    z-index:          5;
     background-image: linear-gradient(-45deg, rgba(82, 112, 222, 0), rgba(32, 32, 32, 0.7));
-    img {
-      position: absolute;
-      top:      0;
-      left:     0;
-      height:   100%;
-      z-index:  -1;
-    }
   }
   &:after {
     content:           "";
@@ -43,13 +45,15 @@
     background-size:   cover;
     width:             100%;
     height:            228px;
-    z-index:           99;
+    z-index:           50;
     position:          absolute;
     bottom:            0;
   }
   &-inner {
-    display: flex;
-    height:  100%;
+    position: relative;
+    display:  flex;
+    height:   100%;
+    z-index:  10;
   }
   &-description {
     display:         flex;
@@ -61,12 +65,43 @@
 
 @media screen and (max-width: 991.98px) {
   .banner {
-
+    .go-to-down {
+      bottom: 50px;
+      width:  26px;
+      height: 15px;
+    }
+    &:after {
+      height: 110px;
+    }
+    .btn {
+      font-size: 1rem;
+    }
   }
 }
 
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 767px) {
   .banner {
-
+    .go-to-down {
+      bottom: 30px;
+      width:  20px;
+      height: 10px;
+    }
+    .btn {
+      padding: 10px 20px;
+    }
+    &:after {
+      height: 45px;
+    }
+    h1 {
+      //margin-bottom: 74px!important;
+    }
+    &-inner {
+      justify-content: center;
+      //padding: 200px 0 135px!important;
+    }
+    &-description {
+      align-items: center;
+      text-align:  center;
+    }
   }
 }

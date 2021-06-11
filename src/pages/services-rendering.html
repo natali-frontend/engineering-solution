@@ -32,16 +32,16 @@
                         OUR SERVICES
                         <ul class='drop-down-list'>
                             <li>
-                                <a href='rendering.html'>Lighting Design & Rendering Services</a>
+                                <a href='services-rendering.html'>Lighting Design & Rendering Services</a>
                             </li>
                             <li>
-                                <a href='electrical.html'>Electrical Design & CAD/BIM Services</a>
+                                <a href='services-electrical.html'>Electrical Design & CAD/BIM Services</a>
                             </li>
                             <li>
-                                <a href='studies.html'>Power System Studies</a>
+                                <a href='services-studies.html'>Power System Studies</a>
                             </li>
                             <li>
-                                <a href='software.html'>Unity 3D/C# software development</a>
+                                <a href='services-software.html'>Unity 3D/C# software development</a>
                             </li>
                         </ul>
                     </a>
@@ -57,6 +57,9 @@
                     <input type="hidden" name="searchid" value="808327">
                     <input type="search" name="text" placeholder="Search...">
                 </form>
+            </div>
+            <div class='burger'>
+                <span></span>
             </div>
         </div>
     </div>
@@ -74,17 +77,16 @@
         <a href='#' class='go-to-down'>
             <img src='../assets/images/icons/go-to-down.svg' alt=''>
         </a>
-       <div class='overlay'>
-           <img src='../assets/images/rendering-banner.jpg' alt=''>
-           <div class='container'>
-               <div class='banner-inner'>
-                   <div class='banner-description'>
-                       <h1>Lighting Design & Rendering Services</h1>
-                       <a href='#' class='btn'>Get in touch</a>
-                   </div>
-               </div>
-           </div>
-       </div>
+        <img src='../assets/images/rendering-banner.jpg' alt=''>
+        <div class='overlay'></div>
+        <div class='container'>
+            <div class='banner-inner'>
+                <div class='banner-description'>
+                    <h1>Lighting Design & Rendering Services</h1>
+                    <a href='#' class='btn'>Get in touch</a>
+                </div>
+            </div>
+        </div>
     </section>
     <section class='rendering-content'>
         <div class='container'>
@@ -132,16 +134,27 @@
                     </div>
                 </div>
             </div>
-            <div class='industrial-lighting-images rendering-images'>
-                <div class='industrial-lighting-image rendering-image active'>
-                    <img src='../assets/images/industrial-lighting-image-1.jpg' alt=''>
+            <div class='industrial-lighting-slider'>
+                <div class=' swiper-container industrial-lighting-swiper'>
+                    <div class='swiper-wrapper'>
+                        <div class='swiper-slide'>
+                            <div class='industrial-lighting-image rendering-image active'>
+                                <img src='../assets/images/industrial-lighting-image-1.jpg' alt=''>
+                            </div>
+                        </div>
+                        <div class='swiper-slide'>
+                            <div class='industrial-lighting-image rendering-image'>
+                                <img src='../assets/images/industrial-lighting-image-2.jpg' alt=''>
+                            </div>
+                        </div>
+                        <div class='swiper-slide'>
+                            <div class='industrial-lighting-image rendering-image'>
+                                <img src='../assets/images/industrial-lighting-image-3.jpg' alt=''>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class='industrial-lighting-image rendering-image'>
-                    <img src='../assets/images/industrial-lighting-image-2.jpg' alt=''>
-                </div>
-                <div class='industrial-lighting-image rendering-image'>
-                    <img src='../assets/images/industrial-lighting-image-3.jpg' alt=''>
-                </div>
+                <div class='swiper-pagination'></div>
             </div>
         </div>
     </section>
@@ -168,7 +181,7 @@
                 <div class='commercial-lighting-slider'>
                     <div class='container'>
                         <!-- Swiper -->
-                        <div class="swiper-container commercial-lighting-swiper">
+                        <div class="swiper-container commercial-lighting-swiper swiper-disabled">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class='commercial-lighting-slider-image'>
@@ -191,6 +204,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class='swiper-pagination'></div>
                         </div>
                         <!-- Add Arrows -->
                         <div class="swiper-button-next"></div>
@@ -218,18 +232,29 @@
                         </div>
                     </div>
                 </div>
-                <div class='sports-lighting-images rendering-images'>
-                    <div class='sports-lighting-image rendering-image'>
-                        <img src='../assets/images/sports-lighting-image-1.jpg' alt=''>
-                    </div>
-                    <div class='sports-lighting-image rendering-image'>
-                        <img src='../assets/images/sports-lighting-image-2.jpg' alt=''>
-                    </div>
-                    <div class='sports-lighting-image rendering-image active'>
-                        <img src='../assets/images/sports-lighting-image-3.jpg' alt=''>
+            <div class='sports-lighting-slider'>
+                <div class=' swiper-container sports-lighting-swiper'>
+                    <div class='swiper-wrapper'>
+                        <div class='swiper-slide'>
+                            <div class='sports-lighting-image active'>
+                                <img src='../assets/images/industrial-lighting-image-1.jpg' alt=''>
+                            </div>
+                        </div>
+                        <div class='swiper-slide'>
+                            <div class='sports-lighting-image'>
+                                <img src='../assets/images/industrial-lighting-image-2.jpg' alt=''>
+                            </div>
+                        </div>
+                        <div class='swiper-slide'>
+                            <div class='sports-lighting-image'>
+                                <img src='../assets/images/industrial-lighting-image-3.jpg' alt=''>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class='swiper-pagination'></div>
             </div>
+        </div>
     </section>
     <section class='photorealistic-renderings'>
         <div class='container'>
@@ -289,10 +314,10 @@
                 </div>
                 <div class='footer-center-service'>
                     <h4>Services</h4>
-                    <a href='rendering.html'>Lighting design & rendering services</a>
-                    <a href='electrical.html'>Electrical design & CAD/BIM services</a>
-                    <a href='studies.html'>Power System Studies</a>
-                    <a href='software.html'>Unity 3D/C# software development</a>
+                    <a href='services-rendering.html'>Lighting design & rendering services</a>
+                    <a href='services-electrical.html'>Electrical design & CAD/BIM services</a>
+                    <a href='services-studies.html'>Power System Studies</a>
+                    <a href='services-software.html'>Unity 3D/C# software development</a>
                 </div>
                 <div class='footer-center-about'>
                     <h4>About</h4>

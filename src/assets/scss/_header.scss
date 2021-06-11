@@ -1,19 +1,20 @@
 @import "./variables";
 
 @media (any-hover: hover) {
-  .header {
-
+  .header .header-menu .menu-item:hover {
+    border-bottom: 3px solid $primaryColor;
   }
 }
 
 .header {
-  position: fixed;
-  top:      0;
-  left:     0;
-  z-index:  100;
-  width:    100%;
-  color:    $white;
-  padding:  40px 0;
+  position:   fixed;
+  top:        0;
+  left:       0;
+  z-index:    100;
+  width:      100%;
+  color:      $white;
+  padding:    27px 0;
+  background: rgba(37, 41, 53, 0.5);
   &.header-dark {
     a {
       color: $black;
@@ -31,10 +32,10 @@
     }
   }
   .container {
-    max-width: 1805px;
+    max-width: 1865px;
   }
   .logo {
-    font-size: 2.75rem;
+    font-size: 2.4444444rem;
   }
   a {
     color: $white;
@@ -49,11 +50,15 @@
       display: flex;
     }
     .menu-item {
-      font-size: 1.5rem;
-      margin:    0 10px;
+      font-size:     1.3333333rem;
+      margin:        0 10px;
+      border-bottom: 3px solid transparent;
       &.menu-item-services {
         display:  inline-block;
         position: relative;
+      }
+      &:active {
+        opacity: .7;
       }
     }
     .drop-down-list {
@@ -68,22 +73,68 @@
   }
   .search {
     .form-search {
-      border-bottom: 1px solid $white;
-      display:       flex;
-      width:         12.9375rem;
+      border-bottom:   1px solid $white;
+      display:         flex;
+      width:           10.2vw;
+      flex-wrap:       nowrap;
+      justify-content: flex-start;
       img {
         width:        19px;
         height:       19px;
         margin-right: 10px;
       }
+      input {
+        all:            unset;
+        font-size:      1rem;
+        padding-bottom: 5px;
+        &::placeholder {
+          color:     $white;
+          font-size: 0.88888888rem;
+        }
+      }
     }
-    .form-search input {
-      all:            unset;
-      font-size:      1rem;
-      padding-bottom: 5px;
-      &::placeholder {
-        color:     $white;
-        font-size: 1rem;
+  }
+  .burger {
+    display:         none;
+    justify-content: center;
+    align-items:     center;
+    width:           22px;
+    height:          16px;
+    cursor:          pointer;
+    z-index:         1000;
+    span {
+      position:      relative;
+      width:         100%;
+      height:        2px;
+      background:    $white;
+      transition:    0.3s linear;
+      border-radius: 3px;
+      &:after, &:before {
+        content:    "";
+        width:      100%;
+        height:     2px;
+        position:   absolute;
+        top:        6px;
+        left:       0;
+        background: $white;
+      }
+      &:before {
+        top: -6px;
+      }
+    }
+    &.active {
+      span {
+        background:    transparent;
+        border-radius: 0;
+        &:after, &:before {
+          top:        0;
+          transform:  rotate(-45deg);
+          background: $white;
+        }
+        &:before {
+          top:       0;
+          transform: rotate(45deg);
+        }
       }
     }
   }
@@ -92,12 +143,58 @@
 
 @media screen and (max-width: 991.98px) {
   .header {
-
+    padding: 9px 0;
+    .logo {
+      font-size: 1.38rem;
+    }
+    &-menu {
+      position:       fixed;
+      top:            0;
+      right:          0;
+      z-index:        50;
+      flex-direction: column;
+      width:          100%;
+      height:         100%;
+      opacity:        0;
+      visibility:     hidden;
+      transition:     0.3s linear;
+      .menu-list {
+        margin-left:     auto;
+        flex-direction:  column;
+        justify-content: center;
+        align-items:     center;
+        max-width:       355px;
+        width:           100%;
+        height:          100%;
+        background:      rgba(38, 38, 38, 0.9);
+      }
+      .menu-item {
+        margin:      0 0 25px;
+        font-size:   1rem;
+        font-weight: 700;
+      }
+      &.mobile-menu {
+        opacity:          1;
+        visibility:       visible;
+        z-index:          1000;
+        background-color: rgba(37, 41, 53, 0.44);
+      }
+    }
+    .burger {
+      display: flex;
+    }
+    .search {
+      display: none;
+    }
   }
 }
 
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 767px) {
   .header {
-
+    &-menu {
+      .menu-item {
+        font-size: 1.15rem;
+      }
+    }
   }
 }
