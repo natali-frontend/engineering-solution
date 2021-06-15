@@ -16,9 +16,6 @@
     &-inner {
       padding: 26.9% 0 19.2%;
     }
-    .btn {
-      padding: 22px 60px;
-    }
   }
   &-description {
     padding: 6.25% 0 8.6%;
@@ -34,12 +31,12 @@
     }
   }
   &-video {
-    text-align:    center;
+    text-align:     center;
     padding-bottom: 8.6%;
-    &-image{
+    &-image {
       margin-bottom: 12%;
       position:      relative;
-      height: 37.92vw;
+      height:        37.92vw;
       img {
         height: 100%;
       }
@@ -57,12 +54,9 @@
   .software {
     .banner {
       h1 {
-        font-size: 2.6rem;
-        max-width: 430px;
+        font-size:     2.6rem;
+        max-width:     430px;
         margin-bottom: 12.1%;
-      }
-      .btn {
-        padding: 11px 40px;
       }
       &-inner {
         padding: 17.7% 0 18.1%;
@@ -72,8 +66,8 @@
       padding: 10% 0 11.2%;
       &-content {
         p {
-          font-size: 1rem;
-          line-height: 1.3125;
+          font-size:     1rem;
+          line-height:   1.3125;
           margin-bottom: 1.875rem;
         }
       }
@@ -82,7 +76,7 @@
       padding-bottom: 12%;
       &-image {
         margin-bottom: 14%;
-        height: 40.3vw;
+        height:        40.3vw;
       }
       .btn {
         padding: 15px 32px;
@@ -95,7 +89,7 @@
   .software {
     .banner {
       h1 {
-        font-size: 2.72rem;
+        font-size:     2.72rem;
         margin-bottom: 15.9%;
       }
       .btn {
@@ -110,7 +104,7 @@
       padding: 7.2% 0 62px;
       &-content {
         p {
-          line-height: 1.28;
+          line-height:   1.28;
           margin-bottom: 1.429rem;
         }
       }
@@ -118,7 +112,7 @@
     &-video {
       padding-bottom: 21vw;
       &-image {
-        height: 49vw;
+        height:        49vw;
         margin-bottom: 68px;
       }
       .btn {

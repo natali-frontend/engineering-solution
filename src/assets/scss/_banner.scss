@@ -11,6 +11,11 @@
   h1 {
     max-width: 820px;
   }
+  .btn {
+    max-width: 281px;
+    width:     100%;
+    padding:   22px 0;
+  }
   > img {
     position:   absolute;
     top:        0;
@@ -75,29 +80,28 @@
     }
     .btn {
       font-size: 1rem;
+      max-width: 172px;
+      padding:   11px 0;
     }
   }
 }
 
 @media screen and (max-width: 767px) {
   .banner {
+    .btn {
+      max-width: 144px;
+      padding:   10px 0;
+    }
     .go-to-down {
       bottom: 30px;
       width:  20px;
       height: 10px;
     }
-    .btn {
-      padding: 10px 20px;
-    }
     &:after {
       height: 45px;
     }
-    h1 {
-      //margin-bottom: 74px!important;
-    }
     &-inner {
       justify-content: center;
-      //padding: 200px 0 135px!important;
     }
     &-description {
       align-items: center;
