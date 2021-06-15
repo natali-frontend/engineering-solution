@@ -128,25 +128,9 @@
     }
   }
   .photorealistic-renderings {
-    padding:    7.57% 0 8.6%;
     text-align: center;
     &-description {
-      margin-bottom: 9.14%;
-      text-align:    left;
-    }
-    &-images {
-      display:         flex;
-      justify-content: space-between;
-      align-items:     center;
-      flex-wrap:       wrap;
-      .photorealistic-renderings-image {
-        width:         30.5%;
-        max-width:     481px;
-        margin-bottom: 3.91vw;
-        img {
-          border-radius: 5px;
-        }
-      }
+      text-align: left;
     }
   }
 }
@@ -215,19 +199,10 @@
       }
     }
     .photorealistic-renderings {
-      padding: 11.3% 0 8.6%;
-      &-inner {
-        margin-bottom: 9%;
-      }
-      &-images {
-        .photorealistic-renderings-image {
-          &:nth-child(4), &:nth-child(5), &:nth-child(6) {
-            display: none;
-          }
+      &-image {
+        &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+          display: none;
         }
-      }
-      .btn {
-        padding: 15px 32px;
       }
     }
   }
