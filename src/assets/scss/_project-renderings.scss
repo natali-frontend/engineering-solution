@@ -33,6 +33,7 @@
     padding: 7.95% 0 7.04%;
     &-description {
       max-width: 1130px;
+      width:     100%;
     }
   }
   .solutions {
@@ -81,16 +82,6 @@
     }
     .requirements {
       padding: 8.25% 0 11%;
-      &-inner {
-        align-items: flex-start;
-      }
-      &-image {
-        width:      45.3%;
-        box-shadow: 5px 10px 10px 0 rgba(82, 112, 222, 0.21);
-      }
-      &-description {
-        width: 100%;
-      }
     }
     .photorealistic-renderings {
       padding: 55px 0 11%;
@@ -127,20 +118,6 @@
     }
     .requirements {
       padding: 5% 0 60px;
-      &-inner {
-        flex-direction: column;
-        align-items:    center;
-      }
-      &-image {
-        width:         100%;
-        box-shadow:    5px 10px 8px 0 rgba(82, 112, 222, 0.21);
-        border-radius: 5px;
-        margin-bottom: 60px;
-        max-width:     initial;
-      }
-      &-description {
-        width: 100%;
-      }
     }
     .solutions {
       &-image {

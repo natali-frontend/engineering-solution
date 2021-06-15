@@ -28,38 +28,14 @@
     }
   }
   .requirements {
-    padding: 8.25% 0 5.8%;
-
-    &-inner {
-      display:         flex;
-      justify-content: space-between;
-      align-items:     center;
-    }
-    &-image {
-      max-width:     705px;
-      width:         46%;
-      box-shadow:    10px 20px 20px 0 rgba(82, 112, 222, 0.21);
-      border-radius: 10px;
-      img {
-        border-radius: 10px;
-      }
-    }
-    &-description {
-      max-width: 765px;
-      width:     50%;
-    }
+    padding: 8.1% 0 5.8%;
   }
   .solutions {
-    &-description {
-      margin-bottom: 9.15%;
-      p {
-        margin-bottom: 1.1111111rem;
-      }
+    p {
+      margin-bottom: 1.1111111rem;
     }
     &-images {
-      display:         flex;
       justify-content: space-evenly;
-      align-items:     center;
     }
     &-image {
       height: initial;
@@ -84,53 +60,6 @@
       max-width: 1260px;
     }
   }
-  .testimonial {
-    padding-bottom: 7.61%;
-    h2 {
-      margin-bottom: 8.62%;
-    }
-    &-slider {
-      position:  relative;
-      max-width: 940px;
-      margin:    0 auto;
-      .swiper-container {
-        margin:  0 8%;
-        padding: 3% 0;
-      }
-    }
-    &-item {
-      width:         94%;
-      margin:        0 auto;
-      position:      relative;
-      min-height:    287px;
-      padding:       44px 7%;
-      box-shadow:    0 10px 20px 0 rgba(82, 112, 222, 0.37);
-      border-radius: 20px;
-      p {
-        font-size: 1.1111111rem;
-      }
-      .country {
-        position: absolute;
-        top:      25px;
-        right:    25px;
-        width:    30px;
-      }
-      .item-title {
-        text-align:    center;
-        margin-bottom: 20px;
-        h4 {
-          margin-bottom: 5px;
-          color:         #262626;
-        }
-        p {
-          color: #707070;
-        }
-      }
-      .item-description {
-
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 991.98px) {
@@ -151,23 +80,11 @@
       }
     }
     .requirements {
-      padding: 8.25% 0 11%;
-      &-inner {
-        align-items: flex-start;
-      }
-      &-image {
-        width:      45.3%;
-        box-shadow: 5px 10px 10px 0 rgba(82, 112, 222, 0.21);
-      }
-      &-description {
-        width: 51%;
-      }
+      padding: 8.5% 0 10.6%;
     }
     .solutions {
-      &-description {
-        p {
-          margin-bottom: 1.9rem;
-        }
+      p {
+        margin-bottom: 1.9rem;
       }
       &-images {
         justify-content: space-between;
@@ -183,43 +100,6 @@
     }
     .outcome {
       padding: 8.4% 0 10.5%;
-    }
-    .testimonial {
-      padding-bottom: 10.4%;
-      h2 {
-        margin-bottom: 11%;
-      }
-      &-slider {
-        max-width: 444px;
-        .swiper-button-prev {
-          left: 0;
-        }
-        .swiper-button-next {
-          right: 0;
-        }
-      }
-      &-item {
-        min-height:    184px;
-        padding:       20px 6.3%;
-        box-shadow:    0 5px 10px 0 rgba(82, 112, 222, 0.37);
-        border-radius: 10px;
-        p {
-          font-size:   .9rem;
-          line-height: 1.357;
-        }
-        .country {
-          top:   14px;
-          right: 17px;
-          width: 20px;
-        }
-        .item-title {
-          margin-bottom: 5px;
-          h4 {
-            font-size:     1rem;
-            margin-bottom: 2px;
-          }
-        }
-      }
     }
   }
 }
@@ -242,32 +122,11 @@
       }
     }
     .requirements {
-      padding: 5% 0 60px;
-      &-inner {
-        flex-direction: column;
-        align-items:    center;
-      }
-      &-image {
-        width:         100%;
-        box-shadow:    5px 10px 8px 0 rgba(82, 112, 222, 0.21);
-        border-radius: 5px;
-        margin-bottom: 60px;
-        max-width:     initial;
-      }
-      &-description {
-        width: 100%;
-      }
+      padding: 23px 0 60px;
     }
     .solutions {
-      &-description {
-        margin-bottom: 55px;
-        p {
-          margin-bottom: 25px;
-        }
-      }
-      &-images {
-        flex-direction:  column;
-        justify-content: center;
+      p {
+        margin-bottom: 25px;
       }
       &-image {
         &:first-child {
@@ -280,42 +139,6 @@
     }
     .outcome {
       padding: 60px 0;
-    }
-    .testimonial {
-      padding-bottom: 53px;
-      h2 {
-        margin-bottom: 7%;
-      }
-      &-slider {
-        .swiper-container {
-          margin:  0;
-          padding: 4.5% 0;
-        }
-        .swiper-button-prev, .swiper-button-next {
-          display: none;
-        }
-      }
-      &-item {
-        min-height: 190px;
-        padding:    20px 9%;
-        p {
-          font-size: 1rem;
-        }
-        .country {
-          top:   23px;
-          right: 8px;
-          width: 17px;
-        }
-        .item-title {
-          margin-bottom: 10px;
-          h4 {
-            margin-bottom: 0;
-          }
-          p {
-            font-size: .86rem;
-          }
-        }
-      }
     }
   }
 }
