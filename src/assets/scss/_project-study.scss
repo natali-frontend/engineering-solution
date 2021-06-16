@@ -119,7 +119,9 @@
       }
     }
     .requirements {
-      padding: 23px 0 60px;
+      &-image {
+        margin-bottom: 60px;
+      }
     }
     .solutions {
       p {
