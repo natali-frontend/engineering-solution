@@ -41,7 +41,7 @@
 
 @media screen and (max-width: 767px) {
   .requirements {
-    padding: 5% 0 60px;
+    padding: 16px 0 60px !important;
     &-inner {
       flex-direction: column;
     }
