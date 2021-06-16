@@ -272,7 +272,7 @@ form {
       opacity:    1;
       width:      20px;
       height:     20px;
-      margin:     0 9px;
+      margin:     0 9px !important;
       &-active {
         background: $primaryColor;
       }
@@ -319,7 +319,7 @@ form {
   .swiper-container {
     .swiper-pagination-bullets {
       .swiper-pagination-bullet {
-        margin: 0 5px;
+        margin: 0 5px !important;
         width:  11px;
         height: 11px;
         border: 2px solid $primaryColor;
@@ -415,7 +415,7 @@ form {
   .swiper-container {
     .swiper-pagination-bullets {
       .swiper-pagination-bullet {
-        margin: 0 4px;
+        margin: 0 4px !important;
         width:  8px;
         height: 8px;
         border: 1px solid $primaryColor;
