@@ -15,8 +15,9 @@
     flex-wrap:       wrap;
   }
   &-image {
-    width:  46.92%;
-    height: 24.4vw;
+    width:     48%;
+    max-width: 746px;
+    height:    24.4vw;
     img {
       height:        100%;
       border-radius: 10px;
