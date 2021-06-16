@@ -64,8 +64,11 @@
     .drop-down-list {
       position:       absolute;
       left:           0;
-      display:        none;
+      display:        flex;
       flex-direction: column;
+      background:     rgba(37, 41, 53, 0.5);
+      border-radius:  0 0 20px 20px;
+      padding:        15px 23px 34px 23px;
       li {
         margin-bottom: 10px;
       }
