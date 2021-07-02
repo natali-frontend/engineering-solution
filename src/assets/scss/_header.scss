@@ -1,8 +1,21 @@
 @import "./variables";
 
 @media (any-hover: hover) {
-  .header .header-menu .menu-item:hover {
-    border-bottom: 3px solid $primaryColor;
+  .header .header-menu {
+    .menu-item:not(:nth-child(2)):hover {
+      border-bottom: 3px solid $primaryColor;
+    }
+    .menu-item-services:hover {
+      .drop-down-list {
+        visibility: visible;
+        opacity:    1;
+      }
+    }
+    .drop-down-list li:hover {
+      a {
+        opacity: .7;
+      }
+    }
   }
 }
 
@@ -13,7 +26,7 @@
   z-index:    100;
   width:      100%;
   color:      $white;
-  padding:    27px 0;
+  padding:    20px 0;
   background: rgba(37, 41, 53, 0.5);
   &.header-dark {
     a {
@@ -46,31 +59,65 @@
     align-items:     center;
   }
   &-menu {
+    transform: translate(0, 25%);
+    li {
+      font-size: initial;
+    }
     .menu-list {
       display: flex;
     }
     .menu-item {
-      font-size:     1.3333333rem;
       margin:        0 10px;
       border-bottom: 3px solid transparent;
-      &.menu-item-services {
-        display:  inline-block;
-        position: relative;
+      cursor:        pointer;
+      a {
+        font-size: 1rem;
+        &:active {
+          opacity: .7;
+        }
       }
-      &:active {
-        opacity: .7;
+      &.menu-item-services {
+        position:      relative;
+        padding-right: 20px;
+        &:after {
+          content:       "";
+          position:      absolute;
+          top:           50%;
+          right:         0;
+          transform:     translate(0, -50%) rotate(180deg);
+          border-left:   5px solid transparent;
+          border-right:  5px solid transparent;
+          border-bottom: 7px solid $white;
+        }
       }
     }
     .drop-down-list {
       position:       absolute;
+      top:            55px;
       left:           0;
+      width:          365px;
       display:        flex;
       flex-direction: column;
       background:     rgba(37, 41, 53, 0.5);
       border-radius:  0 0 20px 20px;
-      padding:        15px 23px 34px 23px;
+      padding:        15px 23px 20px 23px;
+      visibility:     hidden;
+      opacity:        0;
       li {
         margin-bottom: 10px;
+        border-bottom: 1px solid $white;
+        &:last-child {
+          margin-bottom: 0;
+          border-bottom: none;
+          a {
+            padding-bottom: 0;
+          }
+        }
+        a {
+          display:        inline-block;
+          font-size:      1rem;
+          padding-bottom: 10px;
+        }
       }
     }
   }
